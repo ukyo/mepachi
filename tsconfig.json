@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "strict": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true
+  }
+}
