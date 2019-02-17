@@ -7,7 +7,7 @@ export interface CircleWithLine extends fabric.Circle {
 
 const EYE_POINT_RADIUS = 7;
 
-function createCircle(left: number, top: number) {
+export function createCircle(left: number, top: number) {
   const circle = new fabric.Circle({
     left,
     top,
@@ -91,7 +91,7 @@ export function transformCircles(
   angle: number
 ) {
   return circles.map(c => {
-    const [x, y] = rotate(cx, cy, c.left + c.radius, c.top + c.radius, angle);
+    const [x, y] = rotate(cx, cy, c.left + c.radius, c.top + c.radius, -angle);
     const [_x, _y] = scale(cx, cy, x, y, s);
     return { left: _x, top: _y };
   });

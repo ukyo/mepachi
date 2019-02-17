@@ -56,6 +56,7 @@ document.addEventListener("drop", e => {
 
 document.getElementById("create").onclick = () => {
   const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = 448;
   const source = bg.getElement();
   const ctx = canvas.getContext("2d");
   const bytess: Uint8Array[] = [];

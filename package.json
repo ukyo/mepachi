@@ -1,8 +1,8 @@
 {
   "name": "mepachi",
   "scripts": {
-    "build": "parcel build src/index.html",
-    "watch": "parcel watch src/index.html"
+    "build": "parcel build src/*.html",
+    "watch": "parcel src/*.html"
   },
   "devDependencies": {
     "@types/fabric": "^1.5.53",
